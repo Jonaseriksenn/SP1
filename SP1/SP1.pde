@@ -1,7 +1,12 @@
-size(1000,600);
-background(#22317E);
 
-//Gruppe a
+PImage arg;
+
+void setup() {
+  size(1000, 600);
+  background(#22317E);
+  arg = loadImage("Argentina.png");
+
+  //Gruppe a
 rect(25,50,450,50);
 rect(25,105,450,50);
 rect(25,160,450,50);
@@ -57,3 +62,8 @@ rect(965,350,10,50);
 rect(965,405,10,50);
 rect(965,460,10,50);
 rect(965,515,10,50);
+}
+
+void draw() {
+  image(arg, 525, 350, 75,50);
+}
